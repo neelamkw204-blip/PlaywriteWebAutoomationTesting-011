@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-21T20:46:42 IST" name="Default suite" finished-at="2026-06-21T20:46:53 IST" duration-ms="10838">
+    <groups>
+    </groups>
+    <test started-at="2026-06-21T20:46:42 IST" name="Default test" finished-at="2026-06-21T20:46:53 IST" duration-ms="10838">
+      <class name="Bases.setup">
+        <test-method signature="browserInfo()[pri:0, instance:Bases.setup@47af7f3d]" started-at="2026-06-21T20:46:42 IST" name="browserInfo" finished-at="2026-06-21T20:46:53 IST" duration-ms="10796" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInfo -->
+      </class> <!-- Bases.setup -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
