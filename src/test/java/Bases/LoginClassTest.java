@@ -9,6 +9,7 @@ import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
+import com.microsoft.playwright.options.AriaRole;
 
 public class LoginClassTest {
 
@@ -47,13 +48,27 @@ public class LoginClassTest {
     System.out.println(weburl);
   byte[] screenshort = page.screenshot();
      System.out.println(screenshort);
-      page.pdf();
+     
  Locator p = page.locator("//div[@class=\"widget-content\"]//ul[1]/li[5]");
      p.click();
+     
+   
+   //  1. getByRole() Locators
+
+  Locator home1 = page.locator("//nav[@role=\"navigation\"]//li[1]");
+     home1.click();
+     page.getByRole(AriaRole.BUTTON,new Page.GetByRoleOptions().setName("Primary Action")).click();
+     
+     
+      Locator Toggle = page.locator("text = Toggle Button");
+      Toggle.click();
+      page.locator("#username").fill("testing");
+//     page.goBack();
+//     page.goForward();
+//     page.reload();
+ 
      // 7. Clean up and close the browser window
      System.out.println("closeing the browser");
-     
-     
      browser.close();
      
 
